@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'newsPage.dart';
+
 class NavigationExample extends StatefulWidget {
   const NavigationExample({Key? key}) : super(key: key);
 
@@ -46,14 +48,18 @@ class _NavigationExampleState extends State<NavigationExample> {
           child: const Text('Page 1'),
         ),
         Container(
-          color: Colors.green,
           alignment: Alignment.center,
-          child: const Text('Page 2'),
+          child: newsPage(),
         ),
         Container(
           color: Colors.blue,
           alignment: Alignment.center,
           child: const Text('Page 3'),
+        ),
+        Container(
+          color: Colors.pink,
+          alignment: Alignment.center,
+          child: const Text('Page 4'),
         ),
       ][currentPageIndex],
     );
